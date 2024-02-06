@@ -1,0 +1,25 @@
+.bookacall
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bookcall-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bookcall-btn button
+{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-bg);
+    border-radius: 50px;
+    padding: 1.25rem 2rem;
+}

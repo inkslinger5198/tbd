@@ -1,0 +1,97 @@
+.industry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0.5px solid rgb(185, 184, 184);
+    border-radius: 12px;
+    width: 18rem;
+    box-shadow: 10px 10px 5px 0px #888888;
+    padding-bottom: 2rem;
+    background: white;
+    transition: transform 200ms ease-in-out;
+    overflow: hidden;
+}
+
+.industry:hover {
+    transform: scale(1.05);
+}
+
+/* Add the transition property to .industry */
+.industry-img {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    transition: transform 200ms ease-in-out;
+    overflow: hidden;
+}
+
+/* Add the transition property to .industry-img img */
+.industry-img img {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    transition: transform 200ms ease-in-out;
+}
+
+.industry:hover .industry-img,
+.industry:hover .industry-img img {
+    transform: scale(1.1);
+}
+
+
+.industry-title
+{
+    margin: 0rem 0 1rem 0;
+    text-align: center;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.industry-title h3
+{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    
+}
+
+.industry-content p
+{
+    
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.industry-content p
+{
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--color-dark);
+    padding: 0.1rem;
+}
+
+.industry-data
+{
+    padding: 0rem 1rem;
+    transition: transform 200ms ease-in-out;
+}
+.redirect
+{
+    width: 100%;
+    text-align: center;
+}
+.redirect a
+{
+    font-size: 1rem;
+    color: rgb(53, 53, 143);
+    text-align: center;
+}
+
+.redirect a:hover
+{
+    color: rgb(11, 111, 118);
+}

@@ -1,0 +1,241 @@
+.industrymain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 0.5px solid rgb(185, 184, 184);
+  border-radius: 12px;
+  width: 20rem;
+  box-shadow: 10px 10px 5px 0px #888888;
+  padding-bottom: 2rem;
+  background: white;
+  transition: transform 200ms ease-in-out;
+  overflow: hidden;
+}
+
+.industrymain:hover {
+  transform: scale(1.05);
+}
+
+/* Add the transition property to .industrymain */
+.industrymain-img {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  transition: transform 200ms ease-in-out;
+  overflow: hidden;
+}
+
+/* Add the transition property to .industrymain-img img */
+.industrymain-img img {
+  width: 100%;
+  height: 10rem;
+  object-fit: contain;
+  transition: transform 200ms ease-in-out;
+}
+
+.industrymain:hover .industrymain-img,
+.industrymain:hover .industrymain-img img {
+  transform: scale(1.1);
+}
+
+.industrymain-title {
+  margin: 0rem 0 1rem 0;
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.industrymain-title h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.industrymain-content p {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.industrymain-content p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  padding: 0.1rem;
+}
+
+.industrymain-data {
+  padding: 0rem 1rem;
+  transition: transform 200ms ease-in-out;
+}
+.redirect-main {
+  width: 100%;
+  text-align: center;
+}
+.redirect-main  {
+  font-size: 1rem;
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.redirect-main :hover {
+  color: rgb(11, 111, 118);
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1550px) {
+    .industrymain
+    {
+        width: 40rem;
+        padding: 2rem 0;
+    }
+    .industrymain-img img 
+    {
+        height: 20rem;
+        margin-bottom: 1.5rem;
+    }
+    .industrymain-title h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .redirect-main 
+    {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    
+    .industrymain
+    {
+        width: 16rem;
+    }
+    .industrymain-img img 
+    {
+        height: 8rem;
+    }
+    .industrymain-title h3 {
+        font-size: 0.9rem;
+    }
+    .redirect-main 
+    {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .industrymain
+    {
+        width: 30rem;
+        padding: 2rem 0;
+    }
+    .industrymain-img img 
+    {
+        height: 17rem;
+    }
+    .industrymain-title h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .redirect-main 
+    {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .industrymain
+    {
+        width: 30rem;
+        padding: 2rem 0;
+    }
+    .industrymain-img img 
+    {
+        height: 17rem;
+    }
+    .industrymain-title h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .redirect-main 
+    {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .industrymain
+    {
+        width: 25rem;
+        padding: 2rem 0;
+    }
+    .industrymain-img img 
+    {
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .industrymain-title h3 {
+        font-size: 1.25rem;
+    }
+    .redirect-main 
+    {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    .industrymain
+    {
+        width: 20rem;
+        padding: 1rem 0;
+    }
+    .industrymain-img img 
+    {
+        height: 8rem;
+        margin-bottom: 0;
+    }
+    .industrymain-title h3 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .redirect-main 
+    {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .industrymain
+    {
+        width: 15rem;
+        padding: 1rem 0;
+    }
+    .industrymain-img 
+    {
+        margin-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    .industrymain-img img 
+    {
+        height: 6rem;
+        margin-bottom: 0;
+    }
+    .industrymain-title
+    {
+        margin-bottom: 0.5rem;
+    }
+    .industrymain-title h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    .redirect-main 
+    {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,0 +1,151 @@
+.about-founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  gap: 3rem;
+}
+
+.about-founder-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-founder-heading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5rem;
+  color: var(--color-dark);
+}
+
+.data-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon {
+  color: var(--color-dark);
+  font-size: 3.25rem;
+}
+.data-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.founders-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.about-founder-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about-founder-content_data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 0.75;
+}
+
+.about-founder-content_data h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--color-dark);
+}
+
+.about-founder-content_data p {
+  font-size: 1.25rem;
+  line-break: 1.25rem;
+  margin: 0;
+  color: var(--color-light);
+}
+
+.pointer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.bullet {
+  color: var(--color-dark);
+  font-size: 2rem;
+}
+
+.about-founder-content_img {
+  display: flex;
+  flex: 0.25;
+  transition: transform 200ms ease-in-out;
+  
+}
+
+.about-founder-content_img:hover {
+  transform: scale(1.05);
+}
+
+.about-founder-content_img img {
+  width: 500px;
+  height: auto;
+  box-shadow: 10px 10px 10px 0px #888888;
+  border-radius: 25px;
+  border: 5px solid var(--color-dark);
+  transition: transform 200ms ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .about-founder-content {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-founder-content_img img {
+    width: 300px;
+  }
+
+  .about-founder-heading {
+    text-align: center;
+    max-width: 100%;
+  }
+  .about-founder-heading h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--color-dark);
+  }
+}

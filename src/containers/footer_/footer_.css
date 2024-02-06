@@ -1,0 +1,188 @@
+.footer_
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--font-family);
+    color: #eeeeee;
+    background: var(--color-dark);
+    padding: 6rem 8rem;
+    
+}
+
+.footer_-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    cursor: pointer; 
+    flex: 0.3;
+}
+
+.footer_-circle
+{
+    background: #eeeeee;
+    color: var(--color-dark);
+    padding: 0.8rem 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50%;
+    font-family: var(--font-family);
+    margin-right: 0.75rem;
+}
+
+.footer_-title h1
+{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #eeeeee;
+    font-family: var(--font-family);
+    margin-right: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.footer_-links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 0.65;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex: 0.667;
+  gap: 0rem;
+}
+
+.founder-socials,
+.PM-socials,
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.founder-socials h1,
+.PM-socials h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #eeeeee;
+  font-family: var(--font-family);
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.flex-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+
+.flex-link h1, .footer_ a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #eeeeee;
+  font-family: var(--font-family);
+  margin-right: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1500px) {
+  .footer_-circle {
+    padding: 2rem 1.6rem;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+  }
+  .footer_-title h1 {
+    font-size: 2.4rem;
+  }
+  .founder-socials h1,
+  .PM-socials h1 {
+    font-size: 2rem;
+  }
+
+  .flex-link h1 {
+    font-size: 1.7rem;
+  }
+  .social-icon {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer_
+  {
+    padding: 6rem 6rem;
+    gap:8rem;
+  }
+  .footer_-circle {
+    padding: 1rem 0.8rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+  .footer_-title h1 {
+    font-size: 1.2rem;
+  }  
+  .socials
+    {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+  .footer_
+  {
+    flex-direction: column;
+    padding: 4rem 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .footer_-links
+  {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer_-circle {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+  }
+  .footer_-title h1 {
+    font-size: 1rem;
+  } 
+  .founder-socials h1,
+  .PM-socials h1 {
+    font-size: 0.8rem;
+  }
+
+  .flex-link h1 {
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+  }
+  .social-icon {
+    font-size: 0.8rem;
+  } 
+}

@@ -1,0 +1,368 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /*look*/
+  padding: 1.5rem 4rem 1rem 4rem;
+  border-bottom: 0.1px solid var(--color-dark);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  background: #eeeeee;
+
+  /*Fixing navbar*/
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+
+  /*Font*/
+  font-family: var(--font-family);
+}
+
+/*LOGO*/
+.navbar-return
+{
+  display: flex;
+  width: fit-content;
+  flex: 0.1;
+}
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex: 0.1;
+}
+
+.navbar-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--color-dark);
+  color: #eeeeee;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.navbar-title h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*LINKS MENU*/
+.navbar-laptop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 50px;
+  padding: 0.25rem;
+  border: 5px solid var(--color-dark);
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+
+  z-index: 1;
+}
+nav a:hover {
+  color: #eeeeee;
+  transition: all 0.5s ease-in-out;
+}
+
+nav span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 21.5%;
+  height: 100%;
+  background: var(--color-dark);
+  border-radius: 25px;
+  color: #eeeeee;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: -1px;
+  display: block;
+}
+nav a:nth-child(2):hover ~ span {
+  left: 102px;
+  display: block;
+}
+nav a:nth-child(3):hover ~ span {
+  left: 208.5px;
+  display: block;
+}
+nav a:nth-child(4):hover ~ span {
+  left: 313px;
+  display: block;
+}
+nav a:nth-child(5):hover ~ span {
+  left: 433px;
+  display: block;
+  width: 24%;
+}
+
+/*button*/
+.navbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbar-button button {
+  border-radius: 50px;
+  padding: 1.25rem 2rem;
+}
+
+.navbar-button a {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*phone*/
+.navbar-phone {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  background: #eeeeee;
+  padding: 2rem 3rem;
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+  border: 5px solid var(--color-dark);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-phone-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.navbar-phone-links a{
+  font-weight: bold;
+}
+
+.navbar-phone-button {
+  display: none;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1600px) {
+  .navbar {
+    padding: 2.5rem 8rem 2rem 8rem;
+  }
+
+  .navbar-logo {
+    gap: 1.5rem;
+  }
+  .navbar-circle {
+    font-size: 1.8rem;
+    width: 8rem;
+    height: 6rem;
+  }
+  .navbar-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .navbar-laptop {
+    padding: 1rem;
+  }
+  nav a {
+    font-size: 1.7rem;
+  }
+
+  nav span {
+    border-radius: 50px;
+    height: 104%;
+    width: 21%;
+    top: -2px;
+  }
+
+  nav a:nth-child(1):hover ~ span {
+    left: -2px;
+    display: block;
+  }
+
+  nav a:nth-child(2):hover ~ span {
+    left: 152px;
+    display: block;
+  }
+  nav a:nth-child(3):hover ~ span {
+    left: 313px;
+    display: block;
+    width: 18%;
+  }
+  nav a:nth-child(4):hover ~ span {
+    left: 440px;
+    display: block;
+  }
+  nav a:nth-child(5):hover ~ span {
+    left: 608px;
+    display: block;
+    width: 25%;
+  }
+
+  .navbar-button button {
+    padding: 2rem 3rem;
+  }
+  .navbar-button a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    padding: 1.5rem 3rem 1rem 3rem;
+  }
+
+  .navbar-logo {
+    gap: 0.5rem;
+  }
+  .navbar-circle {
+    font-size: 0.85rem;
+    width: 3.75rem;
+    height: 2.75rem;
+  }
+  .navbar-title h1 {
+    font-size: 1.1rem;
+  }
+
+  .navbar-laptop {
+    padding: 0.1rem;
+  }
+  nav a {
+    font-size: 0.75rem;
+  }
+
+  nav span {
+    border-radius: 50px;
+    height: 102%;
+    width: 18%;
+    top: 0px;
+  }
+
+  nav a:nth-child(1):hover ~ span {
+    left: -2px;
+    display: block;
+  }
+
+  nav a:nth-child(2):hover ~ span {
+    left: 90px;
+    display: block;
+    width: 20%;
+  }
+  nav a:nth-child(3):hover ~ span {
+    left: 196.5px;
+    display: block;
+    width: 15%;
+  }
+  nav a:nth-child(4):hover ~ span {
+    left: 280px;
+    display: block;
+    width: 17%;
+  }
+  nav a:nth-child(5):hover ~ span {
+    left: 365.5px;
+    display: block;
+  }
+
+  .navbar-button button {
+    padding: 1rem 1.5rem;
+  }
+  .navbar-button a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
+  }
+  .navbar-laptop {
+    display: none;
+  }
+  .navbar-phone {
+    display: flex;
+  }
+  .navbar-phone-container {
+    padding: 1.75rem 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+  .navbar-phone-container {
+    top: 4rem;
+    right: 3.5rem;
+    
+  }
+  .navbar-button button {
+    display: none;
+  }
+  .navbar-phone-button {
+    display: flex;
+  }
+  .navbar-phone-button button {
+    display: flex;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-phone-container {
+    top: 2rem;
+    right: 2rem;
+    padding: 1.75rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navbar
+  {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+  .navbar-phone-container {
+    top: 2rem;
+    right: 1rem;
+    padding: 1.5rem 1.5rem;
+  }
+}

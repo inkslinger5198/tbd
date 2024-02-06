@@ -1,0 +1,240 @@
+.wins {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  flex-wrap: nowrap;
+}
+
+.wins-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.wins-heading h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5rem;
+  color: var(--color-dark);
+}
+
+.awards {
+  color: var(--color-dark);
+  font-size: 3.25rem;
+}
+
+.wins-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.wins-gallery-longspan, .wins-gallery-shortspan
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+}
+.wins-gallery img {
+  height: 200px;
+  border-radius: 25px;
+  border: 3px solid var(--color-dark);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+}
+
+.long-win
+{
+  width: 100%;
+  height: 100px !important;
+}
+
+.long-win img
+{
+  width: 100%;
+  height: 100px;
+}
+.book-call button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: 5px solid var(--color-dark);
+  border-radius: 50px;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 2213px){
+  .wins-heading h1 {
+    font-size: 6rem;
+  }
+  .awards
+  {
+    font-size: 6rem;
+  }
+  .wins-gallery img {
+    height: 380px;
+  }
+  .book-call button {
+    padding: 2rem 4rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 2212px) and (min-width: 2050px){
+  .wins-heading h1 {
+    font-size: 5.5rem;
+  }
+  .awards
+  {
+    font-size: 5.5rem;
+  }
+  .wins-gallery img {
+    height: 350px;
+  }
+  .book-call button {
+    padding: 1.75rem 3.75rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 2049px) and (min-width: 1793px){
+  .wins-heading h1 {
+    font-size: 5rem;
+  }
+  .awards
+  {
+    font-size: 5rem;
+  }
+  .wins-gallery img {
+    height: 325px;
+  }
+  .book-call button {
+    padding: 1.5rem 3.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1792px) and (min-width: 1620px){
+  .wins-heading h1 {
+    font-size: 4.5rem;
+  }
+  .awards
+  {
+    font-size: 4.5rem;
+  }
+  .wins-gallery img {
+    height: 275px;
+  }
+  .book-call button {
+    padding: 1.5rem 3.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1619px) and (min-width: 1500px){
+  .wins-heading h1 {
+    font-size: 4rem;
+  }
+  .awards
+  {
+    font-size: 4rem;
+  }
+  .wins-gallery img {
+    height: 250px;
+  }
+  .book-call button {
+    padding: 1.5rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+@media screen and (max-width: 1150px) {
+  .wins-heading h1 {
+    font-size: 2.75rem;
+  }
+  .awards
+  {
+    font-size: 2.75rem;
+  }
+  .wins-gallery img {
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wins-heading h1, .awards {
+    font-size: 2.5rem;
+  }
+  .wins-gallery-longspan, .wins-gallery-shortspan
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .wins-gallery img {
+    height: 200px;
+  }
+  .book-call button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wins-heading h1 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .awards
+  {
+    font-size: 2.25rem;
+  }
+  .wins-gallery img {
+    height: 125px;
+  }
+  .book-call button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wins-heading h1, .awards {
+    font-size: 1.75rem;
+  }
+  .book-call button {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.75rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wins-heading h1  {
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .awards
+  {
+    font-size: 1.75rem;
+  }
+  .wins-gallery img {
+    height: 100px;
+  }
+}

@@ -1,0 +1,56 @@
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    padding: 0rem 2rem 0rem 1.5rem;
+}
+
+.navbar-logo img
+{
+    width: 125px;
+    height: 125px;
+}
+
+.navbar-links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border: 0.2rem solid black;
+    padding: 0.8rem 0.5rem;
+    border-radius: 50px;
+    
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    padding: 1rem;
+    border-radius: 50px;
+    overflow: hidden; /* Ensure that the overflow is hidden */
+    transition: transform 0.3s ease-in-out; /* Add a transition for the transform property */
+}
+
+.navbar-links a:hover {
+    background: black;
+    color: #eeeeee;
+    border-radius: 50px;
+    padding: 0.7rem 1.4rem;
+    transform: translateX(10px); /* Adjust the distance you want the links to slide */
+}
+
+.navbar-button button
+{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
